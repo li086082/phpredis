@@ -1,0 +1,138 @@
+<?php
+declare(strict_types = 1);
+
+namespace cache\Client;
+
+
+trait SupportedCommandsTrait{
+
+    public function getSupportedCommands(){
+        return [
+
+            // keys commands
+            "DEL"               => "del",
+            "DUMP"              => "dump",
+            "EXISTS"            => "exists",
+            "EXPIRE"            => "expire",
+            "EXPIREAT"          => "expireAt",
+            "KEYS"              => "keys",
+            "SCAN"              => "scan",
+            "MIGRATE"           => "migrate",
+            "MOVE"              => "move",
+            "OBJECT"            => "object",
+            "PERSIST"           => "persist",
+            "REANDOMKEY"        => "randomKey",
+            "RENAME"            => "rename",
+            "RENAMENX"          => "renameNx",
+            "TYPE"              => "type",
+            "SORT"              => "sort",
+            "TTL"               => "ttl",
+            "RESTORE"           => "restore",
+
+            // string commands
+            "APPEND"            => "append",
+            "BITCOUNT"          => "bitCount",
+            "BITOP"             => "bitOp",
+            "DECR"              => "decr",
+            "DECRBY"            => "decrBy",
+            "GET"               => "get",
+            "GETBIT"            => "getBit",
+            "GETRANGE"          => "getRange",
+            "GETSET"            => "getSet",
+            "INCR"              => "incr",
+            "INCRBY"            => "incrBy",
+            "INCRBYFLOAT"       => "incrByFloat",
+            "MGET"              => "mGet",
+            "MSET"              => "mSet",
+            "SET"               => "set",
+            "SETBIT"            => "setBit",
+            "SETEX"             => "setEx",
+            "SETNX"             => "setNx",
+            "SETRANGE"          => "setRange",
+            "STRLEN"            => "strLen",
+
+            // hash commands
+            "HDEL"              => "hDel",
+            "HEXISTS"           => "hExists",
+            "HGET"              => "hGet",
+            "HGETALL"           => "hGetAll",
+            "HINCRBY"           => "hIncrBy",
+            "HINCRBYFLOAT"      => "hIncrByFloat",
+            "HKEYS"             => "hKeys",
+            "HLEN"              => "hLen",
+            "HMGET"             => "hMGet",
+            "HMSET"             => "hMSet",
+            "HSET"              => "hSet",
+            "HSETNX"            => "hSetNx",
+            "HVALS"             => "hVals",
+            "HSCAN"             => "hScan",
+            "HSTRLEN"           => "hStrlen",
+
+            // lists command
+            "BLPOP"             => "blPop",
+            "BRPOP"             => "brPop",
+            "BRPOPLPUSH"        => "brpoplpush",
+            "LINDEX"            => "lIndex",
+            "LGET"              => "lGet",
+            "LINSERT"           => "lInsert",
+            "LLEN"              => "lLen",
+            "LSIZE"             => "lSize",
+            "LPOP"              => "lPop",
+            "LPUSH"             => "lPush",
+            "LPUSHX"            => "lPushx",
+            "LRANGE"            => "lRange",
+            "LGETRANG"          => "lGetRange",
+            "LREM"              => "lRem",
+            "LREMOVE"           => "lRemove",
+            "LSET"              => "lSet",
+            "LTRIM"             => "lTrim",
+            "LISTTRIM"          => "listTrim",
+            "RPOP"              => "rPop",
+            "RPOPPUSH"          => "rpoplpush",
+            "RPUSH"             => "rPush",
+            "RPUSHX"            => "rPushx",
+
+            // set commands
+            "SADD"              => "sAdd",
+            "SCARD"             => "sCard",
+            "SDIFF"             => "sDiff",
+            "SDIFFSTORE"        => "sDiffStore",
+            "SINTER"            => "sInter",
+            "SINTERSTORE"       => "sInterStore",
+            "SISMEMBER"         => "sIsMember",
+            "SCONTAINS"         => "sContains",
+            "SMEMBERS"          => "sMembers",
+            "SGETMEMBERS"       => "sGetMembers",
+            "SMOVE"             => "sMove",
+            "SPOP"              => "sPop",
+            "SRANDMEMBER"       => "sRandMember",
+            "SREM"              => "sRem",
+            "SREMOVE"           => "sRemove",
+            "SUNION"            => "sUnion",
+            "SUNIONSTORE"       => "sUnionStore",
+            "SSCAN"             => "sScan",
+
+            // zSet commands
+            "ZADD"              => "zAdd",
+            "ZCARD"             => "zCard",
+            "ZCOUNT"            => "zCount",
+            "ZINCRBY"           => "zIncrBy",
+            "ZINTER"            => "zInter",
+            "ZRANGE"            => "zRange",
+            "ZRANGEBYSCORE"     => "zRangeByScore",
+            "ZRANGEBYLEX"       => "zRangeByLex",
+            "ZRANK"             => "zRank",
+            "ZREVRANK"          => "zRevRank",
+            "ZREM"              => "zRem",
+            "ZDELETE"           => "zDelete",
+            "ZREMRANGEBYRANK"   => "zRemRangeByRank",
+            "ZDELETERANGEBYRANK"=> "zDeleteRangeByRank",
+            "ZREMRANGEBYSCORE"  => "zRemRangeByScore",
+            "ZDELETERANGEBYSCORE"=> "zDeleteRangeByScore",
+            "ZREVRANGE"         => "zRevRange",
+            "ZSCORE"            => "zScore",
+            "ZUNION"            => "zUnion",
+            "ZSCAN"             => "zScan"
+        ];
+    }
+}

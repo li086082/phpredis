@@ -1,0 +1,14 @@
+{
+    "name": "79808/phpredis",
+    "type": "library",
+    "authors": [
+        {
+            "name": "lijiaxin",
+            "email": "798086082@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.0",
+        "ext-redis": "*"
+    }
+}
